@@ -49,25 +49,6 @@ function convertCurrency(amount, price, symbol) {
     total = formatCurrencyBRL(total).replace("R$", "");
     result.textContent = `${total} Reais`;
     footer.classList.add("show-result");
-    //------------------------------------
-    // console.log(footer);
-    // footer.style.display = "block";
-    // const description = document.getElementById("description");
-    // const result = document.getElementById("result");
-
-    // if (symbol === "US$") {
-    //   description.textContent = `${symbol} ${amount} = R$ ${price * amount}`;
-    //   result.textContent = ` ${price * amount} Reais`;
-    // } else if (symbol === "€") {
-    //   description.textContent = `${symbol} ${amount} = R$ ${price * amount}`;
-    //   result.textContent = ` ${price * amount} Reais`;
-    // } else {
-    //   description.textContent = `${symbol} ${amount} = R$ ${price * amount}`;
-    //   result.textContent = ` ${price * amount} Reais`;
-    // }
-
-    // //US$ 1 = R$ 4,86
-    // console.log(description.textContent);
   } catch (error) {
     footer.classList.remove("show-result");
     alert("Não foi possivel converter");
